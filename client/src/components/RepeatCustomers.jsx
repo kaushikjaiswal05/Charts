@@ -10,7 +10,7 @@ const RepeatCustomers = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/repeat-customers?interval=daily"
+          "https://data-visualization-qw8s.onrender.com/api/repeat-customers?interval=daily"
         );
         setRepeatCustomersData(response.data);
       } catch (error) {

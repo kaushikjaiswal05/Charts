@@ -10,7 +10,7 @@ const NewCustomersOverTime = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/new-customers-over-time?interval=daily"
+          "https://data-visualization-qw8s.onrender.com/api/new-customers-over-time?interval=daily"
         );
         setCustomersData(response.data);
       } catch (error) {

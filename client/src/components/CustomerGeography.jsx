@@ -10,7 +10,7 @@ const CustomerGeography = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/customer-geography"
+          "https://data-visualization-qw8s.onrender.com/api/customer-geography"
         );
         setGeoData(response.data);
       } catch (error) {

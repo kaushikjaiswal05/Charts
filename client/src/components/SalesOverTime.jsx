@@ -10,7 +10,7 @@ const SalesOverTime = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/sales-over-time?interval=daily"
+          "https://data-visualization-qw8s.onrender.com/api/sales-over-time?interval=daily"
         );
         setSalesData(response.data);
       } catch (error) {

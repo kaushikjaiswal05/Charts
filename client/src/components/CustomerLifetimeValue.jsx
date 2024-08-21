@@ -10,7 +10,7 @@ const CustomerLifetimeValue = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/customer-lifetime-value"
+          "https://data-visualization-qw8s.onrender.com/api/customer-lifetime-value"
         );
         setLifetimeValueData(response.data);
       } catch (error) {
