@@ -34,9 +34,9 @@ const RepeatCustomers = () => {
   };
 
   return (
-    <div>
+    <div className="chart-container">
       <h2 style={{color:"rgba(153, 102, 255, 1)"}}>Repeat Customers Over Time</h2>
-      <Bar data={chartData} />
+      <Bar data={chartData} options={{ responsive: true }} />
     </div>
   );
 };

@@ -34,9 +34,9 @@ const SalesGrowthRate = () => {
   };
 
   return (
-    <div>
+    <div className="chart-container">
       <h2 style={{color: "rgba(255, 99, 132, 1)"}}>Sales Growth Rate Over Time</h2>
-      <Line data={chartData} />
+      <Line data={chartData} options={{ responsive: true }} />
     </div>
   );
 };

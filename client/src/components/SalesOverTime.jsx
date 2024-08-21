@@ -34,9 +34,9 @@ const SalesOverTime = () => {
   };
 
   return (
-    <div>
+    <div className="chart-container">
       <h2 style={{color: "rgba(75, 192, 192, 1)"}}>Total Sales Over Time</h2>
-      <Line data={chartData} />
+      <Line data={chartData} options={{ responsive: true }} />
     </div>
   );
 };

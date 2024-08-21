@@ -48,9 +48,9 @@ const CustomerGeography = () => {
   };
 
   return (
-    <div>
-      <h2 style={{color:"rgba(255, 99, 132, 0.5)"}}>Customer Geography</h2>
-      <Pie data={chartData} />
+    <div className="chart-container">
+      <h2 style={{ color: "rgba(255, 99, 132, 0.5)" }}>Customer Geography</h2>
+      <Pie data={chartData} style={{ gap: "2rem" }} options={{ responsive: true }} />
     </div>
   );
 };

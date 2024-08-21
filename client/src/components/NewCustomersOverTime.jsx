@@ -34,9 +34,9 @@ const NewCustomersOverTime = () => {
   };
 
   return (
-    <div>
+    <div className="chart-container">
       <h2 style={{color: "rgba(54, 162, 235, 1)"}}>New Customers Over Time</h2>
-      <Bar data={chartData} />
+      <Bar data={chartData} options={{ responsive: true }}   />
     </div>
   );
 };

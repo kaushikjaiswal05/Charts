@@ -34,9 +34,9 @@ const CustomerLifetimeValue = () => {
   };
 
   return (
-    <div>
+    <div className="chart-container">
       <h2 style={{color: "rgba(255, 206, 86, 1)"}}>Customer Lifetime Value by Cohorts</h2>
-      <Bar data={chartData} />
+      <Bar data={chartData} options={{ responsive: true }} />
     </div>
   );
 };
